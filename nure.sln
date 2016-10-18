@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task1", "ConsoleApplication1\task1.csproj", "{E5484058-735D-472D-8AD7-6F32977AB549}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nure", "ConsoleApplication1\nure.csproj", "{E5484058-735D-472D-8AD7-6F32977AB549}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

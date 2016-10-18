@@ -7,8 +7,8 @@
     <ProjectGuid>{E5484058-735D-472D-8AD7-6F32977AB549}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>task1</RootNamespace>
-    <AssemblyName>task1</AssemblyName>
+    <RootNamespace>nure</RootNamespace>
+    <AssemblyName>nure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="task2.cs" />
     <Compile Include="task1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
