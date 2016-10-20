@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // Variant # 2
 // Task # 1
 
-namespace task1
+namespace nure
 {
     class task1
     {
