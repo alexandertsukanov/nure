@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Вариант 2
+// Задание 4
+
 namespace nure.test
 {
     class task4

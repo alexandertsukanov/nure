@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//Вариант 6
 //На "удволитворительно"
+//Дано натуральное число. Определить, есть ли в нем цифра а.
 
 namespace nure.labs
 {

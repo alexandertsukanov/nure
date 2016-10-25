@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// Variant # 2
-// Task # 1
+// Вариант 2
+// Задание 1
 
 namespace nure.test
 {
