@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //строку какого-либо символа из второй строки, либо -1,
 //если первая строка не содержит ни одного символа, принадлежащего и второй строке. 
 
-namespace nure.labs
+namespace op.nure.labs
 {
     class task5
     {

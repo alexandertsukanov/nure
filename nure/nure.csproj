@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>nure.labs.task5</StartupObject>
+    <StartupObject>nure.oop.TestClass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,17 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="labs\task1_1.cs" />
-    <Compile Include="labs\task2_1.cs" />
-    <Compile Include="labs\task2_2.cs" />
-    <Compile Include="labs\task3.cs" />
-    <Compile Include="labs\task4.cs" />
-    <Compile Include="labs\task5.cs" />
-    <Compile Include="test\task3.cs" />
-    <Compile Include="test\task2.cs" />
-    <Compile Include="test\task1.cs" />
+    <Compile Include="oop\Counter.cs" />
+    <Compile Include="oop\Counter_2.cs" />
+    <Compile Include="oop\Inheritance.cs" />
+    <Compile Include="op\labs\task1_1.cs" />
+    <Compile Include="op\labs\task2_1.cs" />
+    <Compile Include="op\labs\task2_2.cs" />
+    <Compile Include="op\labs\task3.cs" />
+    <Compile Include="op\labs\task4.cs" />
+    <Compile Include="op\labs\task5.cs" />
+    <Compile Include="op\test\task3.cs" />
+    <Compile Include="op\test\task2.cs" />
+    <Compile Include="op\test\task1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test\task4.cs" />
+    <Compile Include="op\test\task4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

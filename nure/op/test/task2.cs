@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // Вариант 2
 // Задание 2
 
-namespace nure.test
+namespace op.nure.test
 {
     class task2
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 //На "отлично"
 //Даны натуральные числа m и n. Получить все натуральные числа, меньшие n, квадрат суммы цифр которых равен m.
 
-namespace nure.labs
+namespace op.nure.labs
 {
     class task2_2
     {

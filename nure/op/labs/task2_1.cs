@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //На "удволитворительно"
 //Дано натуральное число. Определить, есть ли в нем цифра а.
 
-namespace nure.labs
+namespace op.nure.labs
 {
     class task2_1
     {
