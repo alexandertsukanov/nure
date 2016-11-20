@@ -14,11 +14,20 @@ namespace op.nure.labs
     {
         static void Main(string[] args)
         {
-            int m = 900;
+            int m = 16;
             int n = 1000;
             for (int i = 0; i < n; i++)
             {
-                if ((i * i) == m) { Console.WriteLine(i); }
+                int number = i;
+                int sum = 0;
+                while (number != 0) {
+                    sum += number % 10;
+                    number /= 10;             
+                }
+                if (Math.Pow(sum, 2) == m)
+                {
+                    Console.WriteLine(i);
+                }
             }
         }
     }

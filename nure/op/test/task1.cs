@@ -16,8 +16,9 @@ namespace op.nure.test
             Random a = new Random();
             int answer = 0;
             for (int i = 0; i < 15; i++) {
-                int b = a.Next(1, 100);
-                if ((b % 7 == 0) && (b % 3 == 0)) {
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine(b);
+                if ((b % 7 == 0) || (b % 3 == 0)) {
                     answer += b;
                 }
             }

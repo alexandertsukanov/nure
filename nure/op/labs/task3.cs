@@ -15,20 +15,22 @@ namespace op.nure.labs
 
         static void Main(string[] args)
         {
-           
-            int[] a = {5,-3,-2,-1 , 1, 2, 3 , -5};        
+
+            int[] a = { 3, -3, -3, 3, 1, 1, -1, -5 };        
             for (int i = 0; i < a.Length; i++)
-            {               
-                for (int j = 0; j < a.Length; j++)                   
+            {
+                for (int j = i; j < a.Length; j++)                   
                 {
-                    if (a[i] == (a[j] * -1) && i < j ) {
+                    if (a[i] == (a[j] * -1) ) {
                         int tmp = a[j];
                         a[j] = a[i];
                         a[i] = tmp;
-                        
+                        i = j;
+                        break;
                     }
                 } 
             }
+            Console.WriteLine(string.Join(", ", a));
         }
 
     }

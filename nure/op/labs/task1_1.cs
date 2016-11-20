@@ -19,10 +19,9 @@ namespace op.nure.labs
             double percent = 0;
             for (int i = 1; i <= 10; i++)
             {                         
-                percent = bankAccount * 0.02;
+                percent = Math.Round(bankAccount * 0.02, 2);
                 bankAccount += percent;
-                Console.WriteLine("Month " + i + " deposit amount: " + bankAccount);
-               
+                Console.WriteLine("Month " + i + " sum of growth " + percent);                              
             }
       
         }

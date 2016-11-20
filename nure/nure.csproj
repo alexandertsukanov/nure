@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>nure.oop.TestClass</StartupObject>
+    <StartupObject>op.nure.test.task2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

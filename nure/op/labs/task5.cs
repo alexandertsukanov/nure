@@ -14,14 +14,15 @@ namespace op.nure.labs
     class task5
     {
 
-        public static int Comapre(String a, String b)
+        public static int Compare(String a, String b)
         {
 
-            for (int i = 0; i < b.Length; i++)
+            for (int i = 0; i < a.Length; i++)
             {
-                if (a.Contains(b.ElementAt(i)))
+                if (b.Contains(a.ElementAt(i)))
                 {
-                    return a.IndexOf(b.ElementAt(i));
+                    Console.WriteLine("Element " + a.ElementAt(i));
+                    return i;
                 }
             }
             return -1;
@@ -29,7 +30,7 @@ namespace op.nure.labs
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Comapre("adb", "zb"));
+            Console.WriteLine(Compare("123456", "zbz6"));
         }
     }
 }
