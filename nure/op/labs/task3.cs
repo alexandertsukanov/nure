@@ -16,16 +16,20 @@ namespace op.nure.labs
         static void Main(string[] args)
         {
 
-            int[] a = { 3, -3, -3, 3, 1, 1, -1, -5 };        
+            int[] a = {5, 3, -3, -3, 3, 1, 1, -1, -5 };
+            int last = -1;
             for (int i = 0; i < a.Length; i++)
             {
                 for (int j = i; j < a.Length; j++)                   
                 {
+                    if (i == last) {
+                        break;
+                    }
                     if (a[i] == (a[j] * -1) ) {
                         int tmp = a[j];
                         a[j] = a[i];
                         a[i] = tmp;
-                        i = j;
+                        last = j;
                         break;
                     }
                 } 
