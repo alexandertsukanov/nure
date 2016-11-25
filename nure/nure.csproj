@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>op.nure.labs.task3</StartupObject>
+    <StartupObject>op.nure.labs.task5</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

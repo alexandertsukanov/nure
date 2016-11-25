@@ -21,7 +21,8 @@ namespace op.nure.labs
             {
                 if (b.Contains(a.ElementAt(i)))
                 {
-                    Console.WriteLine("Element " + a.ElementAt(i));
+                    Console.WriteLine("Element value: " + a.ElementAt(i));
+                    Console.Write("Index of first element b in a is: ");
                     return i;
                 }
             }
@@ -30,7 +31,7 @@ namespace op.nure.labs
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Compare("123456", "zbz6"));
+            Console.WriteLine(Compare("123456", "4zbz6"));
         }
     }
 }
