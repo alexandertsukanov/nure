@@ -21,7 +21,7 @@ namespace op.nure.labs
             {                         
                 percent = Math.Round(bankAccount * 0.02, 2);
                 bankAccount += percent;
-                Console.WriteLine("Month " + i + " sum of growth " + percent);                              
+                Console.WriteLine("Month " + i + " sum of growth " + percent + " " + bankAccount );                              
             }
       
         }

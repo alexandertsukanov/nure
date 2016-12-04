@@ -16,25 +16,30 @@ namespace op.nure.labs
         static void Main(string[] args)
         {
 
-            int[] a = {5, 3, -3, -3, 3, 1, 1, -1, -5 };
-            int last = -1;
+            int[] a = {  5, 3, 8, -3, 3, 1, -1, -3, -3 };
+            int[] swapped = new int[a.Length];
+            for (int i = 0; i < swapped.Length; i++) {
+                swapped[i] = -1;
+            } 
+            int lastinswap = 0;         
             for (int i = 0; i < a.Length; i++)
-            {
+            {              
                 for (int j = i; j < a.Length; j++)                   
                 {
-                    if (i == last) {
-                        break;
-                    }
-                    if (a[i] == (a[j] * -1) ) {
+                    if (a[i] == (a[j] * -1) && !swapped.Contains(i) && !swapped.Contains(j))
+                    {
+                        swapped[lastinswap] = i;
+                        swapped[lastinswap + 1] = j;
+                        lastinswap += 2;
                         int tmp = a[j];
                         a[j] = a[i];
                         a[i] = tmp;
-                        last = j;
-                        break;
+                        break;                       
                     }
                 } 
             }
             Console.WriteLine(string.Join(", ", a));
+            Console.WriteLine(string.Join(", ", swapped));
         }
 
     }
