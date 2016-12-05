@@ -16,7 +16,7 @@ namespace op.nure.labs
         static void Main(string[] args)
         {
 
-            int[] a = {  5, 3, 8, -3, 3, 1, -1, -3, -3 };
+            int[] a = { 3, -3, -3, 3, 1, 1, -1, -5 };
             int[] swapped = new int[a.Length];
             for (int i = 0; i < swapped.Length; i++) {
                 swapped[i] = -1;
@@ -39,7 +39,7 @@ namespace op.nure.labs
                 } 
             }
             Console.WriteLine(string.Join(", ", a));
-            Console.WriteLine(string.Join(", ", swapped));
+            
         }
 
     }

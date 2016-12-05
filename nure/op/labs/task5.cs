@@ -13,25 +13,25 @@ namespace op.nure.labs
 {
     class task5
     {
-
         public static int Compare(String a, String b)
         {
-
             for (int i = 0; i < a.Length; i++)
             {
-                if (b.Contains(a.ElementAt(i)))
+                for (int j = 0; j < b.Length; j++)
                 {
-                    Console.WriteLine("Element value: " + a.ElementAt(i));
-                    Console.Write("Index of first element b in a is: ");
-                    return i;
+                    if (a[i] == b[j])
+                    {
+                        return i;
+                    }
                 }
             }
             return -1;
+            
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Compare("123456", "4zbz6"));
+            Console.WriteLine(Compare("one", "etw"));
         }
     }
 }
