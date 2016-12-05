@@ -15,9 +15,19 @@ namespace op.nure.labs
     {
         public static int Compare(String a, String b)
         {
-            for (int i = 0; i < a.Length; i++)
+            int lettersInA = 0;
+            int lettersInB = 0;
+                foreach (var c in a)
+                {
+                    lettersInA++;
+                }
+                foreach (var c in b)
+                {
+                    lettersInB++;
+                }
+            for (int i = 0; i < lettersInA; i++)
             {
-                for (int j = 0; j < b.Length; j++)
+                for (int j = 0; j < lettersInB; j++)
                 {
                     if (a[i] == b[j])
                     {
@@ -31,7 +41,7 @@ namespace op.nure.labs
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Compare("one", "etw"));
+            Console.WriteLine(Compare("one", "n"));
         }
     }
 }
