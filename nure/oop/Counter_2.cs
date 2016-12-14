@@ -23,7 +23,14 @@ namespace nure.oop
             }
             set
             {
-                x = value;
+                if (value > max)
+                {
+                    throw new System.IndexOutOfRangeException("Value more than max constant.");
+                }
+                else
+                {
+                    x = value;
+                }
             }       
         }
        public int HX
@@ -54,11 +61,14 @@ namespace nure.oop
 
             get
             {
-                int answer = x;
+                int answer = X;
                 for (int i = 0; i < index; i++)
                 {
                     answer += hx;
-                    
+                    if(answer > max)
+                    {
+                        throw new System.IndexOutOfRangeException("Value more than max constant.");
+                    }
                 }
                 return answer;
             }       
@@ -66,29 +76,30 @@ namespace nure.oop
 
         Counter_2() { }
         Counter_2(int x) {
-            this.x = x;
+            X = x;
         }
         Counter_2(int x, int hx)
         {
-            this.x = x;
-            this.hx = hx;
+            X = x;
+            HX = hx;
         }
         int generateNext() {
-           x += hx;
-           return x;
+           X += HX;
+           return X;
         }
         int returnCurrent() {
-            return x;
+            return X;
         }
 
         void increase() {
-            x += C;
+            X += C;
         }
 
         static void Main(string[] args)
         {
-            Counter_2 a = new Counter_2(0, 2);         
-            Console.WriteLine( a[10]);
+            Counter_2 a = new Counter_2(0, 2);
+            a.Max = 15;          
+            Console.WriteLine( a[15] );
            
         }
     }
