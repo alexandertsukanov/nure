@@ -41,7 +41,7 @@ namespace op.nure.labs
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Compare("one", "n"));
+            Console.WriteLine(Compare("oe121213", "n3"));
         }
     }
 }

@@ -39,7 +39,6 @@ namespace op.nure.labs
                 } 
             }
             Console.WriteLine(string.Join(", ", a));
-            
         }
 
     }

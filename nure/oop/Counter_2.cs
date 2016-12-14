@@ -15,7 +15,7 @@ namespace nure.oop
       private int max;
       
 
-       private int X
+       public int X
         {
             get 
             { 
@@ -26,7 +26,7 @@ namespace nure.oop
                 x = value;
             }       
         }
-       private int HX
+       public int HX
         {
             get 
             { 
@@ -89,6 +89,7 @@ namespace nure.oop
         {
             Counter_2 a = new Counter_2(1, 2);
             Console.WriteLine( a[10]);
+           
         }
     }
 }
