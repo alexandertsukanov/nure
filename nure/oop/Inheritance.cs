@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 namespace nure.oop
 {
 
-   abstract class Shape
-   {
+    abstract class Shape
+    {
 
-       abstract public double length();
-       abstract public void moveUp(double y);
-       abstract public void moveDown(double y);
-       abstract public void moveLeft(double y);
-       abstract public void moveRight(double y);
+        abstract public double length();
+        abstract public void moveUp(double y);
+        abstract public void moveDown(double y);
+        abstract public void moveLeft(double y);
+        abstract public void moveRight(double y);
 
-   }
+    }
 
     class Line : Shape
     {
 
-        
+
         protected double x1 { get; set; }
         protected double y1 { get; set; }
         protected double x2 { get; set; }
@@ -82,21 +82,21 @@ namespace nure.oop
     {
 
 
-      protected double angle;
+        protected double angle;
 
-      double  Square()
+        double Square()
         {
             return Math.Pow(length(), 2) * Math.Sin(angle);
         }
 
-      double P()
+        double P()
         {
 
             return 4 * length();
 
         }
 
-      public override string ToString()
+        public override string ToString()
         {
 
             return "Класс: " + this.GetType().Name + "\n" + "Площадь: " + Square() + "\n" + "Периметр: " + P() + "\n" + "Угол: " + angle + "\n";
@@ -120,7 +120,7 @@ namespace nure.oop
 
         double h;
 
-        
+
         double Square()
         {
             return 2 * (length() + length() + h);
@@ -175,8 +175,5 @@ namespace nure.oop
             Console.WriteLine(links[2]);
 
         }
-
     }
-
-
 }

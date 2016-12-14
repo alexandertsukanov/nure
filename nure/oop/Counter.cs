@@ -13,7 +13,8 @@ namespace nure.oop
         const int C = 1;
 
         Counter() { }
-        Counter(int x) {
+        Counter(int x)
+        {
             this.x = x;
         }
         Counter(int x, int hx)
@@ -21,15 +22,18 @@ namespace nure.oop
             this.x = x;
             this.hx = hx;
         }
-        int generateNext() {
-           x += hx;
-           return x;
+        int generateNext()
+        {
+            x += hx;
+            return x;
         }
-        int returnCurrent() {
+        int returnCurrent()
+        {
             return x;
         }
 
-        void increase() {
+        void increase()
+        {
             x += C;
         }
 

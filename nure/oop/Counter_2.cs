@@ -8,18 +8,18 @@ namespace nure.oop
 {
     class Counter_2
     {
-       
-      private const int C = 1;
-      private int x;
-      private int hx;
-      private int max;
-      
 
-       public int X
+        private const int C = 1;
+        private int x;
+        private int hx;
+        private int max;
+
+
+        public int X
         {
-            get 
-            { 
-                return x; 
+            get
+            {
+                return x;
             }
             set
             {
@@ -31,21 +31,21 @@ namespace nure.oop
                 {
                     x = value;
                 }
-            }       
+            }
         }
-       public int HX
+        public int HX
         {
-            get 
-            { 
-                return hx; 
+            get
+            {
+                return hx;
             }
             set
             {
                 hx = value;
             }
-        
+
         }
-       public int Max
+        public int Max
         {
             get
             {
@@ -57,7 +57,8 @@ namespace nure.oop
             }
 
         }
-       public int this[int index] {
+        public int this[int index]
+        {
 
             get
             {
@@ -65,17 +66,18 @@ namespace nure.oop
                 for (int i = 0; i < index; i++)
                 {
                     answer += hx;
-                    if(answer > max)
+                    if (answer > max)
                     {
                         throw new System.IndexOutOfRangeException("Value more than max constant.");
                     }
                 }
                 return answer;
-            }       
+            }
         }
 
         Counter_2() { }
-        Counter_2(int x) {
+        Counter_2(int x)
+        {
             X = x;
         }
         Counter_2(int x, int hx)
@@ -83,24 +85,27 @@ namespace nure.oop
             X = x;
             HX = hx;
         }
-        int generateNext() {
-           X += HX;
-           return X;
+        int generateNext()
+        {
+            X += HX;
+            return X;
         }
-        int returnCurrent() {
+        int returnCurrent()
+        {
             return X;
         }
 
-        void increase() {
+        void increase()
+        {
             X += C;
         }
 
         static void Main(string[] args)
         {
             Counter_2 a = new Counter_2(0, 2);
-            a.Max = 15;          
-            Console.WriteLine( a[15] );
-           
+            a.Max = 15;
+            Console.WriteLine(a[15]);
+
         }
     }
 }
