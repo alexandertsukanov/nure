@@ -54,7 +54,7 @@ namespace nure.oop
 
             get
             {
-                int answer = 0;
+                int answer = x;
                 for (int i = 0; i < index; i++)
                 {
                     answer += hx;
@@ -87,7 +87,7 @@ namespace nure.oop
 
         static void Main(string[] args)
         {
-            Counter_2 a = new Counter_2(1, 2);
+            Counter_2 a = new Counter_2(0, 2);         
             Console.WriteLine( a[10]);
            
         }
